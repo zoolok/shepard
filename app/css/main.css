@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&amp;subset=cyrillic);
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import "../libs/magnific-popup/dist/magnific-popup.css";
+@import "../libs/owl.carousel/dist/assets/owl.carousel.min.css";
+@import "../libs/owl.carousel/dist/assets/owl.theme.default.min.css";
+@import "../libs/slick-carousel/slick/slick.css";
+@import "../libs/animate/animate.min.css";
+
+* {
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+:after,
+:before,
+:hover {
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+input,
+textarea,
+select {
+    outline-offset: 0;
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    margin-right: 0 !important;
+}
+
+body {
+    font-size: 1.8rem;
+    background: #fff;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden, .desc-none {
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+.flex {
+    display: -webkit-flex !important;
+    display: flex !important;
+}
+
+.container {
+    max-width: 1366px;
+    padding: 0 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*********************** MOBILE ***************************/
+
+@media only screen and (max-width: 768px) {
+
+    html {
+        font-size: 52.5%;
+    }
+
+    .container {
+        max-width: 1280px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 15px;
+        overflow: hidden;
+    }
+}
