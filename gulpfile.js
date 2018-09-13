@@ -28,29 +28,29 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
-        'app/libs/jquery/dist/jquery.min.js', // jQuery
-        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Magnific Popup
-        'app/libs/owl.carousel/dist/owl.carousel.js',// OWL Carousel
-        'app/libs/slick-carousel/slick/slick.js',// Slick Carousel
-        'app/libs/spincrement/spincrement.min.js',// spincrement
-        'app/libs/waypoints/waypoints.min.js'// waypoints
+        'app/assets/libs/jquery/dist/jquery.min.js', // jQuery
+        'app/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Magnific Popup
+        'app/assets/libs/owl.carousel/dist/owl.carousel.js',// OWL Carousel
+        'app/assets/libs/slick-carousel/slick/slick.js',// Slick Carousel
+        'app/assets/libs/spincrement/spincrement.min.js',// spincrement
+        'app/assets/libs/waypoints/waypoints.min.js'// waypoints
 
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
-        .pipe(gulp.dest('app/js')) // Выгружаем в папку app/js
+        .pipe(gulp.dest('app/assets/js')) // Выгружаем в папку app/js
         .pipe(browserSync.stream());
 });
 
 gulp.task('styles', function() {
     return gulp.src([
-        'app/css/main.css',
-        'app/css/libs.css'
+        'app/assets/css/main.css',
+        'app/assets/css/libs.css'
     ])
         .pipe(rename({ suffix: '.min', prefix : '' }))
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('app/assets/css'))
         .pipe(browserSync.stream())
 });
 
@@ -74,8 +74,8 @@ gulp.task('css-libs', ['css'], function() {
 });*/
 
 gulp.task('watch', ['styles', 'scripts', 'browser-sync'], function() {
-    gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
-    gulp.watch(['libs/**/*.js', 'app/js/**/*.js'], ['scripts'], browserSync.reload);
+    gulp.watch('app/assets/'+syntax+'/**/*.'+syntax+'', ['styles']);
+    gulp.watch(['libs/**/*.js', 'app/assets/js/**/*.js'], ['scripts'], browserSync.reload);
     gulp.watch('app/*.html', browserSync.reload)
 });
 
@@ -84,29 +84,29 @@ gulp.task('clean', function() {
 });
 
 gulp.task('img', function() {
-    return gulp.src('app/images/**/*') // Берем все изображения из app
+    return gulp.src('app/assets/images/**/*') // Берем все изображения из app
         .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
             interlaced: true,
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         })))
-        .pipe(gulp.dest('dist/images')); // Выгружаем на продакшен
+        .pipe(gulp.dest('dist/assets/images')); // Выгружаем на продакшен
 });
 
 gulp.task('build', ['clean', 'img', 'scripts'], function() {
 
     var buildCss = gulp.src([ // Переносим стили в продакшен
-        'app/css/main.min.css',
-        'app/css/libs.min.css'
+        'app/assets/css/main.min.css',
+        'app/assets/css/libs.min.css'
     ])
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('dist/assets/css'))
 
-    var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-        .pipe(gulp.dest('dist/fonts'))
+    var buildFonts = gulp.src('app/assets/fonts/**/*') // Переносим шрифты в продакшен
+        .pipe(gulp.dest('dist/assets/fonts'))
 
-    var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-        .pipe(gulp.dest('dist/js'))
+    var buildJs = gulp.src('app/assets/js/**/*') // Переносим скрипты в продакшен
+        .pipe(gulp.dest('dist/assets/js'))
 
     var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('dist'));

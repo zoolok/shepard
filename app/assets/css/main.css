@@ -1,0 +1,460 @@
+@import "../libs/magnific-popup/dist/magnific-popup.css";
+@import "../libs/owl.carousel/dist/assets/owl.carousel.min.css";
+@import "../libs/owl.carousel/dist/assets/owl.theme.default.min.css";
+@import "../libs/slick-carousel/slick/slick.css";
+@import "../libs/animate/animate.min.css";
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.eot');
+    src: local('PT Sans'), local('PTSans-Regular'),
+    url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSans-Regular.woff') format('woff'),
+    url('../fonts/PTSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Book Alt';
+    src: url('../fonts/Intro-Book-Alt.eot');
+    src: local('Intro Book Alt'), local('Intro-Book-Alt'),
+    url('../fonts/Intro-Book-Alt.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Book-Alt.woff') format('woff'),
+    url('../fonts/Intro-Book-Alt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Regular.eot');
+    src: local('Intro Regular'), local('Intro-Regular'),
+    url('../fonts/Intro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Regular.woff') format('woff'),
+    url('../fonts/Intro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Black';
+    src: url('../fonts/Intro-Black.eot');
+    src: local('Intro Black'), local('Intro-Black'),
+    url('../fonts/Intro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Black.woff') format('woff'),
+    url('../fonts/Intro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Bold';
+    src: url('../fonts/Intro-Bold.eot');
+    src: local('Intro Bold'), local('Intro-Bold-Italic'),
+    url('../fonts/Intro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Bold.woff') format('woff'),
+    url('../fonts/Intro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Light.eot');
+    src: local('Intro Light'), local('Intro-Light'),
+    url('../fonts/Intro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Light.woff') format('woff'),
+    url('../fonts/Intro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Black Inline';
+    src: url('../fonts/Intro-Black-Inline.eot');
+    src: local('Intro Black Inline'), local('Intro-Black-Inline'),
+    url('../fonts/Intro-Black-Inline.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Black-Inline.woff') format('woff'),
+    url('../fonts/Intro-Black-Inline.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Bold.eot');
+    src: local('Intro Bold'), local('Intro-Bold'),
+    url('../fonts/Intro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Bold.woff') format('woff'),
+    url('../fonts/Intro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Black.eot');
+    src: local('Intro Black'), local('Intro-Black'),
+    url('../fonts/Intro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Black.woff') format('woff'),
+    url('../fonts/Intro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Intro Book';
+    src: url('../fonts/Intro-Book.eot');
+    src: local('Intro Book'), local('Intro-Book'),
+    url('../fonts/Intro-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Book.woff') format('woff'),
+    url('../fonts/Intro-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Thin.eot');
+    src: local('Intro Thin'), local('Intro-Thin'),
+    url('../fonts/Intro-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Thin.woff') format('woff'),
+    url('../fonts/Intro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+:after,
+:before,
+:hover {
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+input,
+textarea,
+select {
+    outline-offset: 0;
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    margin-right: 0 !important;
+}
+
+body {
+    font-size: 1.8rem;
+    background: #fdfeff;
+    color: #2e3745;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Intro';
+}
+
+.ptsans {
+    font-family: 'PT Sans';
+}
+.opensans{
+    font-family: 'Open Sans';
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden, .desc-none {
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+.flex {
+    display: -webkit-flex !important;
+    display: flex !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/*********************** INDEX ***************************/
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.header__social{
+    align-items: center;
+}
+.header__social>*{
+    margin-right: 3.2rem;
+}
+.header__social>a:last-of-type{
+    margin-right: 0;
+}
+.header__phone{
+    text-align: right;
+}
+.header__phone a{
+    display: block;
+    color: #323232;
+    font-size: 2.4rem;
+    font-family: 'Intro Book';
+}
+.header__social a>img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+
+}
+.header__phone span{
+    display: block;
+    color: #ef2203;
+    font-size: 1.5rem;
+    font-family: 'Intro Black';
+    text-decoration: underline;
+    cursor: pointer;
+}
+header nav{
+    background-color: #003a11;
+    padding: 1.2rem 0;
+}
+header nav .container{
+    display: flex;
+    justify-content: center;
+}
+header nav a{
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Intro Bold';
+}
+header nav li{
+    margin-right: 6rem;
+}
+.main{
+    background: url(../images/main-bg.jpg)50% 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 8.5rem;
+    padding-bottom: 61.5rem;
+    position: relative;
+}
+.main h1{
+    font-size: 6.6rem;
+    line-height: 7.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Intro Black';
+}
+.main h1>span{
+    display: block;
+    font-size: 6.3rem;
+    text-transform: lowercase;
+    color: transparent;
+    background: linear-gradient(to top, #ee094f 0%, #ff6a00 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.subheader{
+    text-align: center;
+    font-size: 2.4 rem;
+    font-family: 'Intro Light';
+    margin-top: 0.8rem;
+}
+.subheader>span{
+    text-decoration: underline;
+}
+.down{
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background-color: #323232;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 4.2rem  auto 0;
+    cursor: pointer;
+    box-shadow: 8px 11px 8px #666;
+}
+.down:hover{
+    animation: bounceIn 0.8s ease-in-out infinite;
+}
+@keyframes bounceIn {
+    0%{
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50%{
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.down:before{
+    position: absolute;
+    content: '';
+    width: 1.2rem ;
+    height: 1.2rem;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+    top: calc(50% - 0.6rem);
+    left: calc(50% - 0.6rem);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.main__form{
+    position: absolute;
+    width: 102.8rem;
+    height: 31rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    border-radius: 3rem;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49.9%, #000 49.9%, #000 60%, rgba(0, 0, 0, 0) 60%)
+    fixed,
+    linear-gradient(-45deg, #000 10%, rgba(0, 0, 0, 0) 10%)
+    fixed;
+    background-size: 0.3rem 0.3rem;
+    padding: 0.85rem;
+}
+.main__form form{
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-top: 5.2rem;
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 21.9rem;
+    margin-top: 7rem;
+}
+.input-group{
+    position: relative;
+}
+.input-group label{
+    position: absolute;
+    font-size: 1.4rem;
+    color: #767676;
+    font-family: 'Intro Light';
+    left: 0;
+}
+.main__form form h3{
+    text-align: center;
+    font-size: 3.3rem;
+    font-family: 'Intro Light';
+    margin-top: 0.8rem;
+    text-transform: uppercase;
+}
+.main__form form h3>span{
+    display: block;
+    font-family: 'Intro Bold';
+}
+.main__form form input{
+    border:none;
+    width: 17rem;
+    border-bottom: 1px solid #000;
+}
+.main__form form input:active + label,
+.main__form form input:focus + label{
+    color: #ef2203;
+    font-size: 1rem;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+/*********************** MOBILE ***************************/
+
+@media only screen and (max-width: 768px) {
+
+    html {
+        font-size: 52.5%;
+    }
+
+    .container {
+        max-width: 1280px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 15px;
+        overflow: hidden;
+    }
+}
