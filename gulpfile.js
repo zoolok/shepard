@@ -75,7 +75,7 @@ gulp.task('css-libs', ['css'], function() {
 
 gulp.task('watch', ['styles', 'scripts', 'browser-sync'], function() {
     gulp.watch('app/assets/'+syntax+'/**/*.'+syntax+'', ['styles']);
-    gulp.watch(['libs/**/*.js', 'app/assets/js/**/*.js'], ['scripts'], browserSync.reload);
+    gulp.watch(['app/assets/libs/**/*.js', 'app/assets/js/**/*.js'], ['scripts'], browserSync.reload);
     gulp.watch('app/*.html', browserSync.reload)
 });
 
