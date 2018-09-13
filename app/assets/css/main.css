@@ -415,6 +415,7 @@ header nav li{
     color: #767676;
     font-family: 'Intro Light';
     left: 0;
+    top: 30px;
 }
 .main__form form h3{
     text-align: center;
@@ -431,6 +432,10 @@ header nav li{
     border:none;
     width: 17rem;
     border-bottom: 1px solid #000;
+    height: 2px;
+}
+.main__form form input.filled{
+    height: 30px;
 }
 .main__form form input:active + label,
 .main__form form input:focus + label{
