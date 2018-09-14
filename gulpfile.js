@@ -30,10 +30,8 @@ gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
         'app/assets/libs/jquery/dist/jquery.min.js', // jQuery
         'app/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Magnific Popup
-        'app/assets/libs/owl.carousel/dist/owl.carousel.js',// OWL Carousel
-        'app/assets/libs/slick-carousel/slick/slick.js',// Slick Carousel
-        'app/assets/libs/spincrement/spincrement.min.js',// spincrement
-        'app/assets/libs/waypoints/waypoints.min.js'// waypoints
+        'app/assets/libs/owl.carousel/dist/owl.carousel.js'// OWL Carousel
+
 
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
