@@ -14,9 +14,6 @@ var gulp       = require('gulp'), // Подключаем Gulp
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 
-
-
-
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         server: { // Определяем параметры сервера
@@ -31,7 +28,6 @@ gulp.task('scripts', function() {
         'app/assets/libs/jquery/dist/jquery.min.js', // jQuery
         'app/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Magnific Popup
         'app/assets/libs/owl.carousel/dist/owl.carousel.js'// OWL Carousel
-
 
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
@@ -52,24 +48,6 @@ gulp.task('styles', function() {
         .pipe(browserSync.stream())
 });
 
-/*gulp.task('css', function(){ // Создаем таск Css
-    return gulp.src('app/css/!**!/!*.css') // Берем источник
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-        .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
-});
-
-gulp.task('css-libs', ['css'], function() {
-    return gulp.src('app/css/libs.css') // Выбираем файл для минификации
-        .pipe(cssnano()) // Сжимаем
-        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-        .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
-});*/
-
-/*gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
-    gulp.watch('app/css/!**!/!*.css', ['css']); // Наблюдение за css файлами в папке css
-    gulp.watch('app/!*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
-    gulp.watch('app/js/!**!/!*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
-});*/
 
 gulp.task('watch', ['styles', 'scripts', 'browser-sync'], function() {
     gulp.watch('app/assets/'+syntax+'/**/*.'+syntax+'', ['styles']);
