@@ -70,7 +70,7 @@
 }
 
 @font-face {
-    font-family: 'Intro';
+    font-family: 'Intro Light';
     src: url('../fonts/Intro-Light.eot');
     src: local('Intro Light'), local('Intro-Light'),
     url('../fonts/Intro-Light.eot?#iefix') format('embedded-opentype'),
@@ -923,6 +923,7 @@ footer .container{
     font-family: 'Intro Black';
     text-decoration: unset;
     margin-bottom: 3rem;
+    cursor: pointer;
 }
 .policy{
     color: #fff;
