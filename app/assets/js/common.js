@@ -85,18 +85,46 @@ MFP
     $(function () {
         "use strict";
         if ($(".corp-slider-wrap").length > 0) {
-
-            $('.corp-slider-wrap').owlCarousel({
+var owl = $('.corp-slider-wrap');
+            owl.owlCarousel({
                 items: 1,
                 nav: true,
                 navText: ["", ""],
                 dots: true,
                 loop: true,
                 center: true,
-                autoplay:false
+                autoplay:0,
+                onInitialized: allslides,
+                onDragged:checkcur,
+                onTranslated:checkcur
             });
         }
     });
+    function allslides(event) {
+        var items  = event.item.count;
+        if (items < 10){
+        $('.corp-slider-wrap .owl-next').html('0' + items);
+            }else{
+            $('.corp-slider-wrap .owl-next').html(items);
+        }
+        $('.corp-slider-wrap .owl-prev').html('01');
+
+        $(".owl-dots").insertAfter($(".corp-slider-wrap .owl-prev"));
+
+        var dotsw = $(".owl-dots").width();
+
+        $('.owl-dot').css('width',dotsw/items + 'px')
+    }
+    function checkcur(event) {
+        var item = event.page.index + 1;
+        if (item < 10){
+            $('.corp-slider-wrap .owl-prev').html('0' + item);
+        }else{
+            $('.corp-slider-wrap .owl-prev').html(item);
+        }
+
+    }
+
     /* --------------------------------------------------------
 SERVICE PAGE LIST ITEMS
 ----------------------------------------------------------- */
