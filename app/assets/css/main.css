@@ -139,14 +139,15 @@
 
 * {
     box-sizing: border-box;
-    -webkit-transition: all 0.3s ease;
+    outline: none;
+}
+form, a, input,label{
+       -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    outline: none;
 }
-
 :after,
 :before,
 :hover {
@@ -582,10 +583,20 @@ label.filled{
     width: calc(100%/3 - 1.5rem);
     margin-bottom: 4rem;
     position: relative;
+     -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .program-item:hover img{
     filter: saturate(200%);
     box-shadow: 7px -4px 27px 0 rgba(0, 0, 0, 0.43);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .program-item img{
     -webkit-border-radius: 1rem;
@@ -593,6 +604,11 @@ label.filled{
     border-radius: 1rem;
     box-shadow: 7px 14px 27px 0 rgba(0, 0, 0, 0.43);
     margin-bottom: 2rem;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .program-item a{
     font-size: 2.1rem;
@@ -854,7 +870,7 @@ a.ico-button:after {
     border-right: none!important;
 }
 .events{
-    padding-top: 10.5rem;
+   /* padding-top: 10.5rem;*/
 }
 .events-wrap{
     flex-wrap: wrap;
@@ -870,10 +886,20 @@ a.ico-button:after {
     border-radius: 1rem;
     box-shadow: 7px 14px 27px 0 rgba(0, 0, 0, 0.43);
     margin-bottom: 1.5rem;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .event-item:hover img{
     filter: saturate(200%);
     box-shadow: 7px -4px 27px 0 rgba(0, 0, 0, 0.43);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .event-name{
     color: #323232;
@@ -1072,6 +1098,11 @@ footer .container{
     border-radius: 1rem;
     box-shadow: 3px 6px 43px 0 rgba(0, 0, 0, 0.1);
     padding: 4.4rem ;
+      -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .about-item:hover{
     box-shadow:none;

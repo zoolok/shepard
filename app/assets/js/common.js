@@ -139,7 +139,7 @@ SERVICE PAGE LIST ITEMS
 
             $('.more-events').on('click', function(){
                 total = per * (i++);
-                items.slice(0, total).show();
+                items.slice(0, total).fadeIn(1000);
                 console.log(items.length);
                 $(this)[total >= items.length ? 'hide' : 'show']();
             }).click();
