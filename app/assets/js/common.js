@@ -1,5 +1,11 @@
 $(document).ready(function () {
     /* --------------------------------------------------------
+MFP
+----------------------------------------------------------- */
+    $('#youtube-video').magnificPopup({
+        type: 'iframe'
+    });
+    /* --------------------------------------------------------
      INPUTS
     ----------------------------------------------------------- */
     $('.input-group input, .input-group label').on('keyup focus blur', function() {
@@ -70,6 +76,21 @@ $(document).ready(function () {
                 nav: true,
                 navText: ["", ""],
                 dots: false,
+                loop: true,
+                center: true,
+                autoplay:false
+            });
+        }
+    });
+    $(function () {
+        "use strict";
+        if ($(".corp-slider-wrap").length > 0) {
+
+            $('.corp-slider-wrap').owlCarousel({
+                items: 1,
+                nav: true,
+                navText: ["", ""],
+                dots: true,
                 loop: true,
                 center: true,
                 autoplay:false
