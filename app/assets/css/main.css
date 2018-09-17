@@ -450,7 +450,7 @@ header nav li.active a{
     transform: rotate(45deg);
 }
 .inner [class^="main__form-"]{
-    bottom: 5rem;
+    bottom: 4.99rem;
 }
 [class^="main__form-"]{
     position: absolute;
