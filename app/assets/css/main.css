@@ -1502,8 +1502,173 @@ a.ico-button.more{
 }
 .place{
     padding-top: 10.2rem;
-    padding-bottom: 2.3rem;
+    padding-bottom: 9rem;
 }
+.plase-wrap{
+    margin-top: 6.4rem;
+    margin-bottom: 8.5rem;
+    justify-content: space-between;
+   flex-wrap: wrap;
+}
+.place-item{
+    position: relative;
+    width: calc(100%/3 - 6.5rem/2);
+    color: #fff;
+    overflow: hidden;
+}
+.place-item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.place-item:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 60%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 0;
+}
+
+.place-item:hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+.place-text{
+    position: absolute;
+    left: 2.3rem;
+    top: 20.5rem;
+}
+.place-item p{
+    font-size: 2.5rem;
+    font-family: 'Intro Bold';
+    text-decoration: underline;
+    margin-bottom: 1.8rem;
+}
+.place-item span{
+    font-size: 1.8rem;
+    font-family: 'Intro Book';
+    line-height: 2.4rem;
+}
+
+.faq{
+    padding-top: 10.2rem;
+    padding-bottom: 7.5rem;
+    background-color: #f6f6f6;
+}
+.sub{
+    font-family: 'Intro Book';
+    color: #757575;
+    font-size: 2.4rem;
+}
+.faq-wrap{
+    max-width: 71.8rem;
+    margin: 11.5rem  auto 0;
+}
+.faq-item{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.question{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 71.8rem;
+    height: 7rem;
+    border-radius: 3.5rem;
+    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.2);
+    font-family: 'Intro Book';
+    font-size: 2.4rem   ;
+    padding-left: 5.3rem;
+    line-height: 2.4rem;
+}
+.question:before{
+    content: '';
+    position: absolute;
+    width: 2.2rem;
+    height: 2.2rem;
+border-right:3px solid #000;
+    border-bottom:3px solid #000;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 5rem;
+    top: calc(50% - 1.1rem);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.question.down-faq:before{
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.answer {
+    display: none;
+    font-family: 'Intro Book';
+    font-size: 1.8rem ;
+    margin-top: 2.5rem;
+    padding-left: 5.2rem;
+    padding-right: 10.4rem;
+}
+.price{
+    padding-top: 10.2rem;
+    padding-bottom: 12.2rem;
+    background: url(../images/shepard_bottom.jpg) 100% 100% no-repeat;
+}
+.price-box{
+    margin: 5rem auto 0;
+    width: 95.4rem;
+    height: 37.0rem;
+    position: relative;
+    border-image: linear-gradient(to right,  #ff6a00 0%, #ee094f 100%);
+    background-color: #fff;
+    padding: 5.5rem 5.1rem 3.8rem 6.5rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+.price-box p:first-of-type{
+    margin-bottom: 3.5rem;
+}
+.price-box:before{
+    position: absolute;
+    content: '';
+    width: calc(100% + 2rem);
+    height: calc(100% + 2rem);
+    background: linear-gradient(to right,  #ff6a00 0%, #ee094f 100%);
+    z-index: -1;
+    left: -1rem;
+    top: -1rem;
+}
+
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px) {

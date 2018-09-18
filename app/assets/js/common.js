@@ -146,4 +146,11 @@ SERVICE PAGE LIST ITEMS
 
         }
     });
+    /* --------------------------------------------------------
+  FAQ
+----------------------------------------------------------- */
+    $('.question').click(function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('down-faq');
+    })
 });
