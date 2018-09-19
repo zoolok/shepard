@@ -250,7 +250,6 @@ h2:before{
     background: url(../images/header-fon.png) 0 0 no-repeat;
     top: -2.3rem;
     left: 0.3rem;
-
 }
 /*********************** INDEX ***************************/
 header .container{
@@ -338,6 +337,14 @@ header nav li.active a{
     padding-bottom: 79.5rem;
     position: relative;
 }
+.main.inner.fort{
+    background: url(../images/fort-main-bg.jpg)50% 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 10.2rem;
+    padding-bottom: 79.5rem;
+    position: relative;
+}
 .breadcrumb{
     width: 100%;
     position: absolute;
@@ -371,7 +378,15 @@ header nav li.active a{
     text-transform: uppercase;
     font-family: 'Intro Black';
 }
-.main h1>span{
+.main.inner h1>span.sub{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Intro Black';
+    color: inherit;
+    display: block;
+}
+.main h1>span.header-red{
     display: block;
     font-size: 6.3rem;
     text-transform: lowercase;
@@ -381,7 +396,7 @@ header nav li.active a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.main.inner h1>span{
+.main.inner h1>span.header-red{
     display: block;
     font-size: 3.6rem;
     text-transform: lowercase;
@@ -1137,7 +1152,7 @@ footer .container{
     background-color: #fff;
     position: relative;
 }
-.about-video a{
+.about-video>a{
     display: block;
     width: 100%;
     height: 100%;
@@ -1331,45 +1346,7 @@ a.ico-button.more{
     width: 100%;
     height: 100%;
 }
-.draw {
-    transition: color 0.25s;
-}
-.draw::before, .draw::after {
-    border: 2px solid transparent;
-    width: 0;
-    height: 0;
-}
-.draw::before {
-    top: 0;
-    left: 0;
-}
-.draw::after {
-    bottom: 0;
-    right: 0;
-}
-.draw:hover {
-    /* color: #f42b33;*/
-    box-shadow: none;
-}
-.draw:hover::before, .draw:hover::after {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-.draw:hover::before {
-    border-top-color: #ff6a00;
-    border-right-color: #ff6a00;
-    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-}
-.draw:hover::after {
-    border-bottom-color: #ff6a00;
-    border-left-color: #ff6a00;
-    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-}
+
 .vozrast{
     color: #fff!important;
     font-family: "Intro Light";
@@ -1668,7 +1645,198 @@ border-right:3px solid #000;
     left: -1rem;
     top: -1rem;
 }
+.about-video-wrap{
+    margin-top: 7.6rem;
+    justify-content: space-between;
+}
+.about-video-wrap>*{
+    width: calc(50% - 1.3rem);
+    position: relative;
+}
+.about-video-wrap a::before {
+    width:12rem;
+    height: 12rem;
+    top: calc(50% - 6rem);
+    left: calc(50% - 6rem) ;
+}
+.boyard {
+    padding-bottom: 9rem;
+}
+.boyard-wrap{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6.2rem;
 
+}
+.boyard-item{
+    position: relative;
+    width: calc(25% - 0.5rem);
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.boyard-text{
+    position: absolute;
+    color: #fff;
+    top: 12.6rem;
+    left: 1.6rem;
+    padding-right: 1rem;
+}
+.boyard-text p{
+    font-size: 2.4rem;
+    font-family: "Intro Bold";
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    line-height: 2.4rem;
+}
+.boyard-text span{
+    font-size: 1.4rem;
+    font-family: "Intro Book";
+    line-height: 2rem;
+}
+.boyard-item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.boyard-item:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 60%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 0;
+}
+
+.boyard-item:hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+.nashi-meropriyatiya.fort{
+    padding-top: 0;
+}
+.price.fort {
+    padding-top: 2.3rem;
+    padding-bottom: 12.2rem;
+    background:none;
+}
+.fort .price-box {
+    width: 76.8rem;
+    height: 26.1rem;
+}
+.fort .price-box p{
+    padding: 0 8rem;
+}
+.fort .price-box h3{
+    text-align: center;
+    font-size: 4.8rem;
+    font-family: 'Intro Bold';
+    color: #000;
+    margin-bottom: 2.1rem;
+}
+.fort-place{
+    padding-bottom: 10rem;
+}
+.fort-place-wrap{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 6.7rem;
+}
+.fort-place-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100%/3 - 1.5rem);
+    max-height: 33.9rem;
+    height: 33.9rem;
+    border-radius: 1rem;
+    box-shadow: 3px 6px 43px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 5.7rem 3rem 3rem;
+    justify-content: flex-start;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.fort-place-item h4{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "Intro Bold";
+    margin-top: 3.3rem;
+    margin-bottom: 2.3rem;
+}
+.fort-place-item:before,
+.fort-place-item:after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.draw {
+    transition: color 0.25s;
+}
+.draw::before, .draw::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+.draw::before {
+    top: 0;
+    left: 0;
+}
+.draw::after {
+    bottom: 0;
+    right: 0;
+}
+.draw:hover {
+    /* color: #f42b33;*/
+    box-shadow: none;
+}
+.draw:hover::before, .draw:hover::after {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.draw:hover::before {
+    border-top-color: #ff6a00;
+    border-right-color: #ff6a00;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+    border-bottom-color: #ff6a00;
+    border-left-color: #ff6a00;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+.events.fort{
+    padding-bottom: 20rem;
+}
+.rewievs.fort{
+    padding-bottom: 0;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px) {
