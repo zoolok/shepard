@@ -1941,7 +1941,7 @@ a.ico-button.more{
         font-size: 2.5rem;
         margin-top: 2rem;
     }
-    h2::before {
+    h2:before {
         width: 23.5rem;
         height: 2.6rem;
         top: -2.3rem;
@@ -1973,7 +1973,7 @@ a.ico-button.more{
         border: none;
         width: 50px;
         height: 50px;
-        box-shadow: 3px 6px 43px 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.5);
         border-radius: 5px;
         top: 15px;
         right:25px;
@@ -1988,7 +1988,7 @@ a.ico-button.more{
     }
     .mob-button:before{
         position: absolute;
-        top:8px;
+        top:10px;
         left: 12px;
         content: '\f0c9';
         font-family: 'FontAwesome';
@@ -2002,7 +2002,7 @@ a.ico-button.more{
     }
     .mob-button.down-menu:before{
         content: '\f00d';
-      /*  color: #ee094f;*/
+        /*  color: #ee094f;*/
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
@@ -2011,14 +2011,14 @@ a.ico-button.more{
     }
 
     .mob-button:hover:before{
-       /* color: #ee094f;*/
+        /* color: #ee094f;*/
     }
     .mobile-menu nav ul{
         display: flex;
         flex-direction: column;
         width: 100%;
         text-align: left;
-        margin: 100px 0 25px 40px;
+        margin: 100px 0 25px 20px;
         font-size: 25px;
     }
     .mobile-menu nav ul li{
@@ -2097,6 +2097,7 @@ a.ico-button.more{
     }
     .buttons-wrap{
         flex-wrap: wrap;
+        align-items: stretch;
     }
     a.ico-button{
         font-size: 1.8rem;
@@ -2106,12 +2107,12 @@ a.ico-button.more{
     a.ico-button:nth-child(1) {
         background: #fff url(../images/corp-ico.png) 10px 50% no-repeat;
         background-size: 12%;
-        margin: 0 0 10px;
+        margin: 0 0 2rem 0;
     }
     a.ico-button:nth-child(2) {
         background: #fff url(../images/corp-ico-1.png) 15px 50% no-repeat;
         background-size: 15%;
-        margin: 0 1rem;
+        margin: 0;
     }
     a.ico-button:nth-child(3) {
         background: #fff url(../images/corp-ico-2.png) 15px 50% no-repeat;
@@ -2229,5 +2230,18 @@ a.ico-button.more{
     .header__phone a {
         color: #fff;
         font-size: 3.4rem;
+    }
+    .button-main-form{
+        font-size: 2.1rem;
+    }
+    .program-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .slider-text {
+        top: 46rem;
+
     }
 }
