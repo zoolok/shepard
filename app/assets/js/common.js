@@ -48,7 +48,21 @@ MFP
                 loop: true,
                 margin:24,
                 center: false,
-                autoplay: true
+                autoplay: true,
+                responsive:{
+                0:{
+                    items:2,
+                        nav: false
+                },
+                768:{
+                    items:1
+
+                },
+                1920:{
+                    items:4
+                }
+
+            }
             });
         }
     });
@@ -152,5 +166,12 @@ SERVICE PAGE LIST ITEMS
     $('.question').click(function () {
         $(this).next().slideToggle();
         $(this).toggleClass('down-faq');
-    })
+    }) ;
+    /* --------------------------------------------------------
+MOBILE MENU
+----------------------------------------------------------- */
+    $('.mob-button').click(function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('down-menu');
+    });
 });

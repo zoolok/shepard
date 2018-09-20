@@ -1,3 +1,4 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import "../libs/magnific-popup/dist/magnific-popup.css";
 @import "../libs/owl.carousel/dist/assets/owl.carousel.min.css";
 @import "../libs/owl.carousel/dist/assets/owl.theme.default.min.css";
@@ -1231,8 +1232,8 @@ a.ico-button.otz{
 .corp-slider-item img{
     margin-right: 5.7rem;
     min-width: 43.7rem;
- /*   height: 52.2rem;*/
-object-fit: cover;
+    /*   height: 52.2rem;*/
+    object-fit: cover;
 }
 .corp-content {
     padding-top: 8.5rem;
@@ -1499,7 +1500,7 @@ a.ico-button.more{
     margin-top: 6.4rem;
     margin-bottom: 8.5rem;
     justify-content: space-between;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .place-item{
     position: relative;
@@ -1595,7 +1596,7 @@ a.ico-button.more{
     position: absolute;
     width: 2.2rem;
     height: 2.2rem;
-border-right:3px solid #000;
+    border-right:3px solid #000;
     border-bottom:3px solid #000;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -1877,7 +1878,7 @@ border-right:3px solid #000;
     margin-bottom: 0.3rem;
 }
 .list-prop li{
-     padding-right: 5.5rem;
+    padding-right: 5.5rem;
 }
 .komfort .list-prop li::before {
     left: -7rem;
@@ -1912,19 +1913,184 @@ border-right:3px solid #000;
     margin-bottom: 3.3rem;
     line-height: 2.3rem;
 }
+.mobile-menu{
+    display: none;
+}
 /*********************** MOBILE ***************************/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     html {
-        font-size: 52.5%;
+        font-size: 42%;
     }
-
     .container {
-        max-width: 1280px;
-        margin-right: auto;
-        margin-left: auto;
+        max-width:100%;
         padding: 0 15px;
         overflow: hidden;
+    }
+    .mobile-none{
+        display: none!important;
+    }
+    .header__logo{
+        max-width: 50%;
+    }
+    .header__logo img{
+        display: block;
+        max-width: 100%;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 90px;
+        z-index: 10;
+        background-color: #fff;
+        box-shadow: 1px 0 4px 2px #999;
+    }
+    body section:first-of-type{
+        margin-top: 90px;
+    }
+    .down {
+        margin: 4.2rem auto 26px;
+    }
+    .mobile-menu{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .mob-button{
+        position:fixed;
+        border: none;
+        width: 50px;
+        height: 110px;
+        box-shadow: 3px 6px 43px 0 rgba(0, 0, 0, 0.5);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        top: 0;
+        left: calc(50% - 25px);
+        background-color: #f6f6f6;
+        z-index: 10;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .mob-button:before{
+        position: absolute;
+        content: '\f0c9';
+        font-family: 'FontAwesome';
+        font-size: 28px;
+        color: #666;
+        bottom: 0;
+        left: 13px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .mob-button.down-menu:before{
+        content: '\f00d';
+        color: #ee094f;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .mob-button:hover,
+    .mob-button.down-menu{
+        -webkit-transform: translateY(15px);
+        -moz-transform: translateY(15px);
+        -ms-transform: translateY(15px);
+        -o-transform: translateY(15px);
+        transform: translateY(15px);
+    }
+    .mob-button:hover:before{
+        color: #ee094f;
+    }
+    .mobile-menu nav ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        margin: 50px 0 25px 30px;
+        font-size: 25px;
+    }
+    .mobile-menu nav ul li{
+        margin-bottom: 20px;
+    }
+    .mobile-menu nav{
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 90px;
+        background-color: #003a11;
+        color: #fff;
+        z-index: 9;
+
+    }
+    [class^="main__form-"] form h3 {
+        font-size: 3.0rem;
+    }
+    [class^="main__form-"] {
+        width: 100%;
+        left: unset;
+        height: auto;
+    }
+    .inputs{
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 0 0 20px 0;
+    }
+    [class^="main__form-"] form{
+        padding: 15px;
+    }
+    [class^="main__form-"] form input {
+        width: 100%;
+        height: 5.5rem;
+        padding-bottom: 0;
+        background-color: transparent;
+    }
+    .input-group label {
+        top: 14px;
+        font-size: 1.6rem;
+    }
+    [class^="main__form-"] form input:active + label,
+    [class^="main__form-"] form input:focus + label,
+    label.filled {
+        transform: translateY(-14px);
+        font-size: 1.2rem;
+    }
+    .program-item{
+        width: 100%;
+    }
+    .buttons-wrap{
+        flex-wrap: wrap;
+    }
+    a.ico-button:nth-child(1) {
+        background: #fff url(../images/corp-ico.png) 22px 50% no-repeat;
+        background-size: 12%;
+        margin: 0 0 10px;
+    }
+    a.ico-button:nth-child(2) {
+        background: #fff url(../images/corp-ico-1.png) 22px 50% no-repeat;
+        background-size: 15%;
+        margin: 0;
+    }
+    a.ico-button:nth-child(3) {
+        background: #fff url(../images/corp-ico-2.png) 22px 50% no-repeat;
+        background-size: 15%;
+        margin: 0;
+    }
+    .mobile-menu .header__social {
+       justify-content: center;
+    }
+    .mobile-menu .header__social img{
+        filter:brightness(80);
     }
 }
