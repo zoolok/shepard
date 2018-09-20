@@ -52,7 +52,7 @@ MFP
                 responsive:{
                 0:{
                     items:2,
-                        nav: false
+
                 },
                 768:{
                     items:1
