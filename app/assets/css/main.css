@@ -1938,7 +1938,8 @@ a.ico-button.more{
         max-width: 100%;
     }
     .header__phone span {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
+        margin-top: 2rem;
     }
     h2::before {
         width: 23.5rem;
@@ -1971,14 +1972,13 @@ a.ico-button.more{
         position:fixed;
         border: none;
         width: 50px;
-        height: 110px;
+        height: 50px;
         box-shadow: 3px 6px 43px 0 rgba(0, 0, 0, 0.5);
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        top: 0;
-        left: calc(50% - 25px);
+        border-radius: 5px;
+        top: 15px;
+        right:25px;
         background-color: #f6f6f6;
-        z-index: 10;
+        z-index: 11;
         cursor: pointer;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -1988,12 +1988,12 @@ a.ico-button.more{
     }
     .mob-button:before{
         position: absolute;
+        top:8px;
+        left: 12px;
         content: '\f0c9';
         font-family: 'FontAwesome';
-        font-size: 28px;
+        font-size: 30px;
         color: #666;
-        bottom: 0;
-        left: 13px;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
@@ -2002,30 +2002,23 @@ a.ico-button.more{
     }
     .mob-button.down-menu:before{
         content: '\f00d';
-        color: #ee094f;
+      /*  color: #ee094f;*/
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
     }
-    .mob-button:hover,
-    .mob-button.down-menu{
-        -webkit-transform: translateY(15px);
-        -moz-transform: translateY(15px);
-        -ms-transform: translateY(15px);
-        -o-transform: translateY(15px);
-        transform: translateY(15px);
-    }
+
     .mob-button:hover:before{
-        color: #ee094f;
+       /* color: #ee094f;*/
     }
     .mobile-menu nav ul{
         display: flex;
         flex-direction: column;
         width: 100%;
         text-align: left;
-        margin: 150px 0 25px 40px;
+        margin: 100px 0 25px 40px;
         font-size: 25px;
     }
     .mobile-menu nav ul li{
@@ -2105,18 +2098,23 @@ a.ico-button.more{
     .buttons-wrap{
         flex-wrap: wrap;
     }
+    a.ico-button{
+        font-size: 1.8rem;
+        padding-left: 7rem;
+        border: 0 solid transparent;
+    }
     a.ico-button:nth-child(1) {
-        background: #fff url(../images/corp-ico.png) 22px 50% no-repeat;
+        background: #fff url(../images/corp-ico.png) 10px 50% no-repeat;
         background-size: 12%;
         margin: 0 0 10px;
     }
     a.ico-button:nth-child(2) {
-        background: #fff url(../images/corp-ico-1.png) 22px 50% no-repeat;
+        background: #fff url(../images/corp-ico-1.png) 15px 50% no-repeat;
         background-size: 15%;
-        margin: 0;
+        margin: 0 1rem;
     }
     a.ico-button:nth-child(3) {
-        background: #fff url(../images/corp-ico-2.png) 22px 50% no-repeat;
+        background: #fff url(../images/corp-ico-2.png) 15px 50% no-repeat;
         background-size: 15%;
         margin: 0;
     }
@@ -2172,6 +2170,8 @@ a.ico-button.more{
         width: calc(100%/2 - 1rem) !important;
         margin-bottom: .8rem;
         margin-right: .8rem;
+        height: auto;
+        object-fit: contain;
     }
     footer .container {
         justify-content: center;
@@ -2206,5 +2206,28 @@ a.ico-button.more{
         font-size: 1.8rem;
         font-family: 'Intro Bold';
         margin-top: 2.5rem;
+    }
+    .rew-name {
+        padding-left: 16rem;
+        line-height: 2.5rem;
+        margin-bottom: .5rem;
+    }
+    .rew-place {
+        padding-left: 16rem;
+    }
+    .rew-text{
+        padding: 7rem 2rem 2rem 2rem;
+    }
+    .main {
+        background: url(../images/main-bg.jpg) 50% 69% no-repeat;
+        background-size: contain;
+    }
+    .header__phone {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .header__phone a {
+        color: #fff;
+        font-size: 3.4rem;
     }
 }
