@@ -2247,9 +2247,10 @@ a.ico-button.more{
 
     }
     .main.inner{
-        background: url(../images/corp-bg.jpg) 50% -9rem no-repeat!important;
         background-size: cover!important;
         padding-top: 2.2rem!important;
+        background-position-x: 50%!important;
+        background-position-y: -9rem!important;
     }
     .about-info {
         width: 100%;
@@ -2268,6 +2269,7 @@ a.ico-button.more{
         padding: 2rem 0;
         top: unset;
         left:unset;
+        text-align: center;
     }
     .about-info:before {
         background-size: 25%;
@@ -2276,11 +2278,16 @@ a.ico-button.more{
     .about-video img{
         width: 100%;
     }
-    .about-button-wrap{
+    .about-button-wrap,
+    .splav-button-wrap{
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-    .about-button-wrap>a{
+    .splav-button-wrap{
+        padding: 0 15px;
+    }
+    .about-button-wrap a,
+    .splav-button-wrap a{
         background: #fff!important;
         padding: 0!important;
         justify-content: center;
@@ -2305,19 +2312,111 @@ a.ico-button.more{
         margin-right: 0;
     }
     .corp-content {
-        padding-top: 3.5rem;
-        padding-right: 0;
+        padding-top: 3.5rem!important;
+        padding-right: 0!important;
     }
     .corp-content p {
-        font-size: 2rem;
+        font-size: 2rem!important;
         color: #000;
         line-height: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
+        margin-top: 2rem!important;
+        margin-bottom: 3rem!important;
     }
     .corp-slider-wrap .owl-nav {
         bottom: unset;
         min-width: 100%;
         top: -38px;
+    }
+    .about-info.scool {
+        height: 57.5rem;
+    }
+    .kp-item{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .list-prop li{
+        width: 100%;
+        margin-bottom: 6.1rem;
+    }
+    .mer-item{
+        width: 100%;
+        margin-bottom: 4.1rem;
+    }
+    .mer-item img{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+    .mer-item p{
+        font-size: 2.5rem;
+    }
+    .place-item{
+        width: 100%;
+        margin-bottom: 2.1rem;
+    }
+    .place-item p {
+        font-size: 3.5rem;
+    }
+    .place-item span {
+        font-size: 2.8rem;
+    }
+    .faq-wrap {
+        max-width: 100%;
+        margin: 5.5rem auto 0;
+    }
+    .question {
+        width: 100%;
+        height: 8rem;
+        padding-right: 6rem;
+        padding-left: 3.3rem;
+    }
+    .question:before {
+        right: 3rem;
+    }
+    .answer {
+        font-size: 2rem;
+    }
+    .price-box {
+        margin: 5rem auto 278px;
+        width: 100%!important;
+        height: auto!important;
+        padding: 15px!important;
+        font-size: 2rem!important;
+    }
+    .fort .price-box p {
+        padding: 15px;
+    }
+    .fort .price-box {
+        margin-bottom:0;
+    }
+    .about-video-wrap{
+        flex-wrap: wrap;
+    }
+    .about-video-wrap>*{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .boyard-item{
+        width: 100%;
+    }
+    .boyard-item img{
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+    .boyard-text p {
+        font-size: 3.8rem;
+        line-height: 4rem;
+        margin-bottom: 5rem;
+    }
+    .boyard-text span {
+        font-size: 2.5rem;
+        font-family: "Intro Book";
+        line-height: 3rem;
+    }
+    .fort-place-item{
+        width: 100%;
+        margin-bottom: 2rem;
     }
 }
