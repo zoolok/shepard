@@ -2114,11 +2114,12 @@ a.ico-button.more{
         background: #fff url(../images/corp-ico-1.png) 15px 50% no-repeat;
         background-size: 15%;
         margin: 0;
+        width: 20rem;
     }
     a.ico-button:nth-child(3) {
         background: #fff url(../images/corp-ico-2.png) 15px 50% no-repeat;
         background-size: 15%;
-        margin: 0;
+        width: 20rem;
     }
     .mobile-menu .header__social {
         justify-content: center;
