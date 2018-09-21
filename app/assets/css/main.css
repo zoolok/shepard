@@ -2419,4 +2419,8 @@ a.ico-button.more{
         width: 100%;
         margin-bottom: 2rem;
     }
+    .splav .place-item span {
+        font-size: 2.4rem;
+        line-height: 2.5rem;
+    }
 }
