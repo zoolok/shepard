@@ -2104,22 +2104,31 @@ a.ico-button.more{
         font-size: 1.8rem;
         padding-left: 7rem;
         border: 0 solid transparent;
+        width: 100%;
     }
     a.ico-button:nth-child(1) {
         background: #fff url(../images/corp-ico.png) 10px 50% no-repeat;
-        background-size: 12%;
+        background-size: 11%!important;
         margin: 0 0 2rem 0;
+        width: 100%;
+        padding-left: 2rem ;
+        justify-content: center;
     }
     a.ico-button:nth-child(2) {
         background: #fff url(../images/corp-ico-1.png) 15px 50% no-repeat;
-        background-size: 15%;
-        margin: 0;
-        width: 20rem;
+        background-size: 11%!important;
+        width: 100%;
+        justify-content: center;
+        margin: 0 0 2rem 0;
+        padding: 0;
     }
     a.ico-button:nth-child(3) {
         background: #fff url(../images/corp-ico-2.png) 15px 50% no-repeat;
-        background-size: 15%;
-        width: 20rem;
+        background-size: 11%!important;
+        width: 100%;
+        margin: 0 0 2rem 0;
+        justify-content: center;
+        padding: 0;
     }
     .mobile-menu .header__social {
         justify-content: center;
