@@ -50,19 +50,18 @@ MFP
                 center: false,
                 autoplay: true,
                 responsive:{
-                0:{
-                    items:2,
+                    0:{
+                        items:2,
 
-                },
-                768:{
-                    items:4
+                    },
+                    768:{
+                        items:4
 
-                },
-                1920:{
-                    items:4
+                    },
+                    1920:{
+                        items:4
+                    }
                 }
-
-            }
             });
         }
     });
@@ -99,7 +98,7 @@ MFP
     $(function () {
         "use strict";
         if ($(".corp-slider-wrap").length > 0) {
-var owl = $('.corp-slider-wrap');
+            var owl = $('.corp-slider-wrap');
             owl.owlCarousel({
                 items: 1,
                 nav: true,
@@ -117,8 +116,8 @@ var owl = $('.corp-slider-wrap');
     function allslides(event) {
         var items  = event.item.count;
         if (items < 10){
-        $('.corp-slider-wrap .owl-next').html('0' + items);
-            }else{
+            $('.corp-slider-wrap .owl-next').html('0' + items);
+        }else{
             $('.corp-slider-wrap .owl-next').html(items);
         }
         $('.corp-slider-wrap .owl-prev').html('01');

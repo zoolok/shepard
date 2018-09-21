@@ -2246,4 +2246,78 @@ a.ico-button.more{
         top: 46rem;
 
     }
+    .main.inner{
+        background: url(../images/corp-bg.jpg) 50% -9rem no-repeat!important;
+        background-size: cover!important;
+        padding-top: 2.2rem!important;
+    }
+    .about-info {
+        width: 100%;
+        padding: 15px 23px;
+        height: 45.7rem;
+        margin: 4rem auto 9rem;
+    }
+    .about-info p {
+        font-size: 2rem;
+    }
+    .about-info h3 {
+        font-size: 3.8rem;
+        color: #000;
+        background-color: transparent;
+        position: relative;
+        padding: 2rem 0;
+        top: unset;
+        left:unset;
+    }
+    .about-info:before {
+        background-size: 25%;
+    }
+    .about-item,
+    .about-video img{
+        width: 100%;
+    }
+    .about-button-wrap{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .about-button-wrap>a{
+        background: #fff!important;
+        padding: 0!important;
+        justify-content: center;
+        width: 100%!important;
+        margin-top: 2rem!important;
+    }
+
+    .button-about{
+        font-size: 1.8rem;
+        flex-grow: 1;
+        order: 1;
+        margin-top: 2rem;
+    }
+    .slider-text{
+        display: none;
+    }
+    .corp-slider-item{
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+    .corp-slider-item img {
+        margin-right: 0;
+    }
+    .corp-content {
+        padding-top: 3.5rem;
+        padding-right: 0;
+    }
+    .corp-content p {
+        font-size: 2rem;
+        color: #000;
+        line-height: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .corp-slider-wrap .owl-nav {
+        bottom: unset;
+        min-width: 100%;
+        top: -38px;
+    }
 }
